@@ -1,0 +1,54 @@
+// margin-* padding-* 
+
+.flex-inline{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+$total: 55;
+@while $total>=0 {
+
+  .mt-#{$total} {
+    margin-top: #{$total}px !important;
+  }
+
+  .mr-#{$total} {
+    margin-right: #{$total}px !important;
+  }
+
+  .mb-#{$total} {
+    margin-bottom: #{$total}px !important;
+  }
+
+  .ml-#{$total} {
+    margin-left: #{$total}px !important;
+  }
+
+  .m-#{$total} {
+    margin: #{$total}px;
+  }
+
+  .pt-#{$total} {
+    padding-top: #{$total}px;
+  }
+
+  .pr-#{$total} {
+    padding-right: #{$total}px;
+  }
+
+  .pb-#{$total} {
+    padding-bottom: #{$total}px;
+  }
+
+  .pl-#{$total} {
+    padding-left: #{$total}px;
+  }
+
+  .p-#{$total} {
+    padding: #{$total}px;
+  }
+
+  $total: $total - 1;
+}
